@@ -17,7 +17,7 @@ font-family: 'Poppins', sans-serif;
 5.  Education
 6.  Skill
 7.  Experience
-8. Contact
+
 
 /*-------------------------------------
 		1.General css (Reset code)
@@ -187,7 +187,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background:url(../images/about/welcome-banner2.jpg)no-repeat;
     background-size:cover;
     background-position: center;
     height:890px;
@@ -252,7 +252,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 .single-about-txt p {
     font-size: 16px;
-    color: #999fb3;
+    /*color: #999fb3;*/
     padding: 35px 0 43px;
     border-bottom: 1px solid #999fb3;
 }
@@ -321,9 +321,34 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 /*.single-about-img */
 
+.email-link {
+  color: #a606c3; /* Set the desired color using a hexadecimal code or any other valid color value */
+  text-decoration: none; /* Remove the default underline for the link */
+}
+
+.email-link:hover {
+  text-decoration: underline; /* Add underline when hovering over the link */
+}
+
+.website-link {
+  color: #a606c3; /* Set the desired color for the link */
+  text-decoration: none; /* Remove the default underline for the link */
+  font-weight: bold; /* Optionally, make the link text bold */
+}
+
+.website-link:hover {
+  text-decoration: underline; /* Add underline when hovering over the link */
+}
+
 /*-------------------------------------
         5.  Education
 --------------------------------------*/
+.icon-graduation:before {
+  content: "\f19d"; /* Font Awesome graduation cap icon code */
+  font-family: "Font Awesome 5 Free"; /* Font family for the icon */
+  font-weight: 900; /* Font weight for the icon */
+  margin-right: 0.5em; /* Spacing between the icon and heading text */
+}
 
 .education {
     padding: 50px 0 100px;
@@ -385,8 +410,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     margin: 18px 0 20px;
 }
 .main-timeline .description {
-    font-size: 14px;
-    color: #999fb3;
+    font: normal 12px "Helvetica Neue", sans-serif;
+    /*font-size: 12px;
+    /*color: #999fb3;*/
 }
 .main-timeline .timeline-content.right{
     float: right;
@@ -412,7 +438,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
         6.  Skills
 --------------------------------------*/
 .skills {
-    
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
 }
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
@@ -428,11 +457,32 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 .single-progress-txt h3 {
     width: 10%;
-    color: #a606c3;
+   /* color: #a606c3;*/
     position: relative;
     top: 6px;
     left: 20px;
 }
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
 .barWrapper {
     font-weight: 400;
     font-size: 16px;
@@ -477,129 +527,50 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
    margin-left: 0;
 }
 
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+}
+
+.tabcontent.show {
+  display: block;
+}
 /*-------------------------------------
         7. Experience
 -------------------------------------*/
 
+
 /*-------------------------------------
-        8. Contact
+        8.  Research
 --------------------------------------*/
-.contact {
-    background: #f9fbfd;
+.research {
     padding: 50px 0 100px;
 }
-.single-contact-box {padding-top: 100px;}
-.contact-form  .form-group {
-    margin-bottom: 20px;
-    
-}
-.contact-form .form-control {
-    padding: 25px;
-    font-size: 14px;
-    border: 1px solid #fff;
-    border-radius: 0px;
-    box-shadow: none;
-    outline: 0!important;
-    background: #fff;
-    color: #636a82;
-    resize: none;
-}
 
-/*--contct button--*/
-.contact-form .single-contact-btn {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:50px;
-    text-transform:capitalize;
-    margin-top: 3px;
-    background: #b636ff;
-    border: 1px solid #b636ff;
-    cursor:pointer;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
-     -webkit-transition: .5s; 
-    -moz-transition:.5s; 
-    -ms-transition:.5s; 
-    -o-transition:.5s;
-    transition: .5s;
-}
-.contact-form .single-contact-btn .contact-btn ,
-.contact-form .single-contact-btn .contact-btn:focus {
-    margin-top:0px;
-    outline: 0 !important;
-    border:0;
-    color: #fff;
-    border-radius: 0px;
-    font-size:14px;
-    -webkit-transition: .5s; 
-    -moz-transition:.5s; 
-    -ms-transition:.5s; 
-    -o-transition:.5s;
-    transition: .5s;
-    
-}
-.single-contact-btn:hover{
-    background: #9f00ff;
-    border: 1px solid #9f00ff;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
-}
-
-/*--contct button--*/
-
-/* contact-adress */
-.contact-add-head h3 {
-    font-size:  24px;
-    color:  #3c4258;
-}
-.contact-add-head p {
-    font-size:  16px;
-    text-transform: capitalize;
-    color:  #636a82;
-    font-weight:  300;
-    margin-top:  6px;
-}
-/* contact-adress */
-
-/*.contact-add-info */
-.contact-add-info { margin: 42px 0 52px;}
-.single-contact-add-info h3 {
-    color:  #636a82;
-    font-weight:  500;
-}
-.single-contact-add-info p {
-    color:  #999fb3;
-    font-size:  16px;
-    margin-top:  18px;
-}
-.single-contact-add-info {
-    margin-bottom:  26px;
-}
-/*.contact-add-info */
-
-/*hm-foot-icon*/
-.hm-foot-icon {
-   
-}
-.hm-foot-icon ul li{float:left;}
-.hm-foot-icon ul li>a {
-    color: #636a82;
-    margin-right:18px;
-    -webkit-transition: .3s; 
-    -moz-transition:.3s; 
-    -ms-transition:.3s; 
-    -o-transition:.3s;
-    transition: .3s;
-}
-.hm-foot-icon ul li>a:hover{
-    color: #b636ff;
-}/*hm-foot-icon*/
-
-.hm-footer-copyright p{
-    color: #888ea5;
-    text-transform: capitalize;
-    padding: 38px 0;
-}
-.hm-footer-copyright p a {color: #888ea5;}
 /*===============================
     Scroll Top
 ===============================*/
