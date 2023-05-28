@@ -438,7 +438,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
         6.  Skills
 --------------------------------------*/
 .skills {
-    max-width: 68.75rem;
+    /*max-width: 68.75rem;*/
+    max-width: 95rem;
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
