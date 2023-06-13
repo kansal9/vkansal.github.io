@@ -78,6 +78,9 @@ body {
   white-space: normal;
   color: black;
   background: white;
+  border-width: .2em;
+  border-style: solid;
+  border-color: black;
 }
 
 .timeline ol li div::before {
