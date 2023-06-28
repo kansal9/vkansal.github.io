@@ -799,7 +799,6 @@
 		<!--owl.carousel.js-->
         <script src="assets/js/owl.carousel.min.js"></script>
 
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		
         
@@ -807,5 +806,25 @@
         <script src="assets/js/custom.js"></script>
         
     </body>
-	
+    
+    <script>
+      // Function to track file downloads
+      function trackDownload(url) {
+        // Make a request to a server-side script to log the download
+        // Replace 'log-download.php' with the actual URL of your server-side script
+        fetch('log-download.php?url=' + encodeURIComponent(url))
+          .then(response => console.log('Download logged:', url))
+          .catch(error => console.error('Error logging download:', error));
+      }
+
+      // Attach event listeners to the download links
+      var downloadLinks = document.getElementsByClassName('ai ai-cv fa-spin');
+      for (var i = 0; i < downloadLinks.length; i++) {
+        downloadLinks[i].addEventListener('click', function(event) {
+          var url = this.getAttribute('href');
+          trackDownload(url);
+        });
+      }
+    </script>
+
 </html>
